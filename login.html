@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title></title>
+
+  <!-- CSS  -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+<body style="background:#fff">
+<div class="top-left-img right  hide-on-small-only"></div>
+  <div class="container">
+   <div class="row log-center">
+   	<h3 class=""><i class="material-icons log-icon">&#xE0DA;</i> Log In</h3>
+    <div id="test1" class="col s12 m12 l12 log-shadow">  
+    	<!--Form Starting-->
+  	<div class="row tab-bg no-margin-bottom">
+      <form action="#" class="col s12 tab-bg pad-25">
+        <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name" data-error="wrong" data-success="right" >Username</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name" data-error="wrong" data-success="right" >Password</label>
+          </div>
+          <div class="input-field s12 m6 l6">
+                <button type="submit" class="btn-floating btn-large waves-effect waves-light orange-bg right"><i class="material-icons">keyboard_arrow_right</i></button>
+          </div>
+
+        </div>
+          <div class="input-field s12 m6 l6">
+               <p class="help">Help?</p>
+          </div>
+        </div>
+        
+      </form>
+    </div>
+  	<!--Form Ending -->
+    
+    
+    </div>
+
+  </div>
+  <div class="left logos"></div>
+  </div>
+  
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+  	 $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year
+  });
+  </script>
+
+  <script>
+  $(document).ready(function(){
+    $('ul.tabs').tabs('select_tab', 'tab_id');
+  });
+  </script>
+    <script>
+   $(document).ready(function() {
+    $('select').material_select();
+  });
+  </script>
+ <!-- <script src="js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>-->
+
+  </body>
+</html>

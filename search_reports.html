@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title></title>
+
+  <!-- CSS  -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<style>
+	#bg-white{
+		background-color:#fff;
+		}
+</style>
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <div class="left logos"></div>
+      <div class="col s12 l6 m6">
+        <ul class="right hidden-sm margin-top-bot">
+          <li>
+            <a class=" left create-btn orange-bg waves-effect waves-light btn"><i class="material-icons left">add</i>Create a new case</a>
+          	<div class="left lo-con">
+            	<span class="logout hide-on-small-only">Logout</span>
+                <span class="hide-on-small-only">joh@pwc.com</span>
+            </div>
+            <i class="left small material-icons powerbtn">&#xE8AC;</i>
+         </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+ <main> 
+ <div class="searching">
+    <div class="container">
+
+      <div class="row">
+    <h5 class="sub-head">Search for Reports Created Between</h5>
+    
+            <div class="input-field col s12 m2 l2">
+                <input type="date" class="datepicker">
+                 <label for="birthdate" class="datepicker">Pick a start Date</label>
+                    
+            </div>
+            <div class="input-field col s12 m1 l1">
+                 <label>&nbsp; &nbsp; and &nbsp; &nbsp;</label>
+            </div>
+            <div class="input-field col s12 m2 l2">
+                <input type="date" class="datepicker">
+                 <label for="birthdate" class="datepicker">Pick a end Date</label>  
+            </div>
+            <div class=" input-field col s12 m3 l3">
+                    <input id="first_name" type="text" class="validate"  required="">
+                    <label for="first_name" data-error="wrong" data-success="right"> Target Name(Optional)</label>
+            </div>
+            <div class="input-field s12 m6 l6 search-icon">
+                <button type="submit" class="btn-floating btn-large waves-effect waves-light orange-bg right"><i class="material-icons">search</i></button>
+          </div>
+      </div>
+  </div>
+ </div>
+
+   <div class="progress">
+      <div class="indeterminate"></div>
+  </div>
+  
+  <div class="container">
+   <div class="row">
+   	<h6 class="sub-head">Create a New Case</h6>
+   
+    <!--Form Starting-->
+    
+    </div>
+  </div>
+</main>  
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+  	 $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year
+  });
+  </script>
+
+  <script>
+  $(document).ready(function(){
+    $('ul.tabs').tabs('select_tab', 'tab_id');
+  });
+  </script>
+    <script>
+   $(document).ready(function() {
+    $('select').material_select();
+  });
+  </script>
+ <!-- <script src="js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>-->
+
+  </body>
+</html>

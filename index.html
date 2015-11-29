@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title></title>
+
+  <!-- CSS  -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <div class="left logos"></div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <ul class="right hidden-sm margin-top-bot">
+          <li>
+          	<div class="left lo-con">
+            	<span class="logout hide-on-small-only">Logout</span>
+                <span class="hide-on-small-only">joh@pwc.com</span>
+            </div>
+            <i class="left small material-icons powerbtn">&#xE8AC;</i>
+         </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+ <div class="progress">
+      <div class="indeterminate"></div>
+  </div>
+  </div>
+  
+  <div class="container">
+  	<div class="row ">
+      <div class="orange-bg padding col s12 m12 l12 bg-shadow">
+          	<a class="" href="#">
+            <ul class="collection collection-reset col-lg-12 col-md-12" >
+            	<li class="collection-item-reset col l3 ">
+                	<span class=" left"><i class="left sp-icon medium material-icons">insert_chart</i></span>
+					<div class="valign caption active left sp sp-big">Report<br/>Summery</div>
+                </li>
+                <li class="collection-item-reset col l2 hide-on-small-only">
+                  <span class="title left">2</span>
+                <div class="valign caption left sp sp-opacity">Pending<br/>Requests</div></li>
+                <li class="collection-item-reset col l3 hide-on-small-only" style="padding-left:50px;">
+                 <span class="title left">2</span>
+                <div class="valign caption left sp sp-opacity" >Allocated<br/>Requests</div>
+                </li>
+                <li class="collection-item-reset col l4">
+                   <span class="title left hide-on-small-only">26</span>
+                  <div class="valign caption left sp sp-opacity hide-on-small-only">Processed<br/>Requests</div>
+                  <span class="right"><i class="sp-icon medium material-icons">keyboard_arrow_right</i></span>
+                </li>
+            </ul></a>
+      </div>
+    </div>
+
+   <div class="row">
+   	<h5 class="sub-head">Create a New Case</h5>
+    <div class="col s12 m6 l6">
+      <ul class="tabs" style="margin-left:-11px ">
+        <li class="tab col s6 m2 l2 bg-shadow" style="z-index:-3;"><a class="active tab-bg" href="#test1">Individual</a></li>
+        <li class="tab col s6 m2 l2 bg2 disabled" style="z-index:-2;"><a href="#test2" class="bg2">Entity</a></li>
+      </ul>
+    </div>
+    <div id="test1" class="col s12 bg-shadow">
+    
+    	<!--Form Starting-->
+  	<div class="row tab-bg no-margin-bottom">
+      <form action="#" class="col s12 tab-bg pad-25">
+        <div class="col s12 m6 l6">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="first_name" type="text" class="validate"  required="">
+            <label for="first_name" data-error="wrong" data-success="right"> Legal name of the main subject*</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name" data-error="wrong" data-success="right" >IDs (PAN, DL etc…)</label>
+          </div>
+          <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea validate" length="120" placeholder="Lorem ipsum dolor sit amet, conse ctetur adipisicing elit."></textarea>
+          <label for="textarea1"  >Misc. Additional Info</label>
+        </div>
+        </div>
+        </div>
+        <div class="col s12 m6 l6">
+            <div class="row">
+              <div class="input-field col s12 m4 l4">
+                  <input type="date" class="datepicker">
+                  <label for="birthdate" class="datepicker">Date of Birth</label>
+              </div>
+              <div class="input-field col s12 m4 l4">
+                      <select >
+                      <option value="" disabled selected>Categorization</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                    <label>Country</label>
+              </div>
+              <div class="input-field col  s12 m4 l4">
+                  <select>
+                      <option value="" disabled selected>Categorization</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                    <label>Categorization</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m4 l4">
+                  <select>
+                      <option value="" disabled >Categorization</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                    <label>Type of Report</label>
+              </div>
+              <div class="input-field col s12 m4 l4">
+                  <select>
+                  <option value="" disabled >Categorization</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label>Priority</label>
+              </div>
+              <div class="input-field col s12 m4 l4">
+                <div class="file-field">
+                  <div class="btn btn-pad">
+                    <span class="file-btn">choose file</span>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper col s12 m12 l12">
+                    <input class="file-path validate no-border-bottom file-text" style="height:auto;margin-bottom:0;" type="text">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col  s12 m6 l6 no-margin-top">
+                  <input type="checkbox" class="filled-in " id="filled-in-box" checked="checked" />
+                 <label for="filled-in-box" style="line-height:18px;" data-error="wrong" data-success="right">Do you have pre-filled forms or documents about the target?</label>
+              </div>
+              <div class="input-field s12 m6 l6">
+                <button type="submit" class="btn-floating btn-large waves-effect waves-light orange-bg right"><i class="material-icons">keyboard_arrow_right</i></button>
+
+              </div>
+            </div>
+        </div>
+      </form>
+    </div>
+  	<!--Form Ending -->
+    
+    
+    </div>
+    <div id="test2" class="col s12 disabled" >
+    <!--Form Starting-->
+    
+    </div>
+  </div>
+  
+
+  </div>
+  
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+  	 $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year
+  });
+  </script>
+
+  <script>
+  $(document).ready(function(){
+    $('ul.tabs').tabs('select_tab', 'tab_id');
+  });
+  </script>
+    <script>
+   $(document).ready(function() {
+    $('select').material_select();
+  });
+  </script>
+ <!-- <script src="js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>-->
+
+  </body>
+</html>
